@@ -1,0 +1,7 @@
+@charset "utf-8";
+html { background: #DDDDDD; height: 100%; overflow: auto;}
+body { margin: 0; padding: 0; height: 100%; width: 100%; font-family: 맑은고딕, Malgun Gothic, 굴림, Gulim, Sans-Serif; font-size: 12pt; }
+#main #sub { background: #FFFFFF; margin: 5px; padding: 10px; }
+#main #sub_main { background: #FCCC7A; margin: 5px; padding: 10px; } /*FABC3A*/
+#mdh { font-size: 16pt; }
+#reqtime { font-size: 9pt; }
