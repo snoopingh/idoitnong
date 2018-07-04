@@ -1,0 +1,14 @@
+RewriteEngine On
+
+#회원가입 페이지
+RewriteRule ^join php/join.php
+
+#데이터 추가 페이지 http://도메인/idoitnong/add/사용자인증키/센서타입/센서값
+RewriteRule ^add/([0-9a-z]{32})/([0-9a-z]{1,6})/(-?\d+) php/add.php?auth_key=$1&sensor_type=$2&sensor_value=$3
+
+#전체 데이터 보기 http://도메인/idoitnong/view/사용자인증키/last/all
+RewriteRule ^view/([0-9a-z]{32})/last/all php/view.php?auth_key=$1&mode=last&sensor_type=all
+
+#RewriteRule ^view/([0-9a-z]{32})/([0-9a-z]{1,6}) php/view.php?auth_key=$1&mode=$2&sensor_type=$3
+
+#데이터 보기 http://도메인/view/사용자인증키/last/센서타입
